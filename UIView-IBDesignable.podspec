@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "UIView-IBDesignable"
-  s.version          = "0.0.2"
+  s.version          = "0.1.0"
   s.summary          = "IB_DESIGNABLE category to UIView"
   s.description      = <<-DESC
                        Just install this pod and use inspectable layer properties

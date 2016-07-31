@@ -11,15 +11,24 @@
 IB_DESIGNABLE
 @interface UIView (IBDesignable)
 
-@property (nonatomic, assign) IBInspectable BOOL shouldRasterize;
-@property (nonatomic, assign) IBInspectable BOOL masksToBounds;
-@property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
-@property (nonatomic, assign) IBInspectable CGFloat borderWidth;
-@property (nonatomic, strong) IBInspectable UIColor *borderColor;
+@property (nonatomic, assign) IBInspectable BOOL layerShouldRasterize;
+@property (nonatomic, assign) IBInspectable BOOL layerMasksToBounds;
+@property (nonatomic, assign) IBInspectable CGFloat layerCornerRadius;
+@property (nonatomic, assign) IBInspectable CGFloat layerBorderWidth;
+@property (nonatomic, strong) IBInspectable UIColor *layerBorderColor;
 
-@property (nonatomic, strong) IBInspectable UIColor *shadowColor;
-@property (nonatomic, assign) IBInspectable CGFloat shadowOpacity;
-@property (nonatomic, assign) IBInspectable CGFloat shadowRadius;
-@property (nonatomic, assign) IBInspectable CGSize shadowOffset;
+@property (nonatomic, strong) IBInspectable UIColor *layerShadowColor;
+@property (nonatomic, assign) IBInspectable CGFloat layerShadowOpacity;
+@property (nonatomic, assign) IBInspectable CGFloat layerShadowRadius;
+@property (nonatomic, assign) IBInspectable CGSize layerShadowOffset;
+
+@end
+
+//
+
+IB_DESIGNABLE
+@interface UILabel (IBDesignable)
+
+@property (nonatomic, assign) IBInspectable CGFloat paragraphLineHeight;
 
 @end
